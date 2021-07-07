@@ -21,7 +21,7 @@ fino a quando ne avrà tanti quanti l’altro.
 4)Utilizzare sia for che while.
 */
 
-var number;
+/* var number;
 var somma = 0;
 
 //? For solution
@@ -36,7 +36,7 @@ while (i <= 5) {
     somma += number;
     i++;
 }
-console.log(somma);
+console.log(somma); */
 
 //! SNACK 2
 /*
@@ -45,13 +45,38 @@ console.log(somma);
 3)Quando è pari stampa il numero inserito altrimenti se dispari stampa lo stesso numero + 1
 */
 
-var number = parseInt(prompt('Inserisci un numero:'));
+/* var number = parseInt(prompt('Inserisci un numero:'));
 if (number % 2 === 0) {
     console.log(number);
 } else {
     console.log(number + 1);
+} */
+
+//! SNACK 3
+
+/*
+1)Creare due array contenti nomi e cognomi
+2)Creare un array vuoto che sarà la fakelist
+3)Crare due variabili contente l'index random per entrambi gli array
+4)Tenere presente che l'array fake deve essere di 3 elementi
+5)Creare variabile contente un nome random e un cognome random
+6)Impostare una condizione e pushare gli elementi random nell'array
+*/
+
+var nada = prompt('Vuoi generare dei nomi e cognomi RANDOM PORCO DIO?')
+var nameList = ['Lorenzo', 'Matteo', 'Giuseppe', 'Alberto', 'Emanuele', 'Vincenzo', 'Saverio', 'Nicola', 'Marco', 'Ercole'];
+var surnameList = ['Pisani', 'Moretti', 'Mascolo', 'Pucello', 'De Pasquale', 'Caramia', 'Montenegro', 'Lillo', 'Tropiano', 'Barletta'];
+var fakelist = [];
+var fakeuser;
+
+while (fakelist.length < 10) {
+    var randomNameList = nameList[Math.floor(Math.random() * nameList.length)];
+    var randomsurnameList = surnameList[Math.floor(Math.random() * surnameList.length)];
+    fakeuser = randomNameList + " " + randomsurnameList;
+    if (!fakelist.includes(fakeuser)) {
+        fakelist.push(fakeuser);
+    }
 }
 
-
-
+console.table(fakelist)
 
