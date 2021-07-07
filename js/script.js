@@ -63,7 +63,6 @@ if (number % 2 === 0) {
 6)Impostare una condizione e pushare gli elementi random nell'array
 */
 
-var nada = prompt('Vuoi generare dei nomi e cognomi RANDOM PORCO DIO?')
 var nameList = ['Lorenzo', 'Matteo', 'Giuseppe', 'Alberto', 'Emanuele', 'Vincenzo', 'Saverio', 'Nicola', 'Marco', 'Ercole'];
 var surnameList = ['Pisani', 'Moretti', 'Mascolo', 'Pucello', 'De Pasquale', 'Caramia', 'Montenegro', 'Lillo', 'Tropiano', 'Barletta'];
 var fakelist = [];
