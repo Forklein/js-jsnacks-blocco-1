@@ -38,6 +38,19 @@ while (i <= 5) {
 }
 console.log(somma);
 
+//! SNACK 2
+/*
+1)Chiedere all'utente un numero
+2)Verificare se pari o dispari con modulo
+3)Quando è pari stampa il numero inserito altrimenti se dispari stampa lo stesso numero + 1
+*/
+
+var number = parseInt(prompt('Inserisci un numero:'));
+if (number % 2 === 0) {
+    console.log(number);
+} else {
+    console.log(number + 1);
+}
 
 
 
