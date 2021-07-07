@@ -14,14 +14,14 @@ fino a quando ne avrà tanti quanti l’altro.
 */
 
 //! SNACK 1
-/* 
+/*
 1)Chiedere all'utente di inserire un numero per 5 Volte.
 2)Creare una variabile somma e porla = 0.
 3)Stampare la somma di tutti i numeri.
 4)Utilizzare sia for che while.
 */
 
-/* var number;
+var number;
 var somma = 0;
 
 //? For solution
@@ -36,7 +36,7 @@ while (i <= 5) {
     somma += number;
     i++;
 }
-console.log(somma); */
+console.log(somma);
 
 //! SNACK 2
 /*
@@ -45,12 +45,12 @@ console.log(somma); */
 3)Quando è pari stampa il numero inserito altrimenti se dispari stampa lo stesso numero + 1
 */
 
-/* var number = parseInt(prompt('Inserisci un numero:'));
+var number = parseInt(prompt('Inserisci un numero:'));
 if (number % 2 === 0) {
     console.log(number);
 } else {
     console.log(number + 1);
-} */
+}
 
 //! SNACK 3
 
@@ -79,3 +79,22 @@ while (fakelist.length < 10) {
 
 console.table(fakelist)
 
+//! SNACK 4
+
+/*
+1)Creare due array di lunghezza diversa
+2)Verificare quale dei due Array è piu corto
+3)Pushare elementi nell'array piu corto finchè i due array non hanno la stessa lunghezza
+*/
+
+var firstList = [1, 5];
+var secondList = [3, 5, 8, 10, 6];
+do {
+    var randomNumber = Math.floor(Math.random() * 10);
+    if (firstList.length > secondList.length) {
+        secondList.push(randomNumber);
+    } else if (secondList.length > firstList.length) {
+        firstList.push(randomNumber);
+    }
+} while (firstList.length !== secondList.length)
+console.log(firstList, secondList);
