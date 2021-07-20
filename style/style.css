@@ -3,3 +3,25 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    background-color: brown;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+table{
+    width: 100%;
+    border: 2px solid black;
+    padding: 5px;
+    background-color: #fff;
+}
