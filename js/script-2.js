@@ -75,7 +75,11 @@ var team = [
 
 for (var i = 0; i < team.length; i++) {
     var currentTeam = team[i];
-    success += '<tr>' + '<td>';
-    success += currentTeam.name + currentTeam.city + currentTeam.points;
-    success += '</td>' + '</tr>';
+    success += '<tr>';
+    success += '<td>' + currentTeam.name + '</td>';
+    success += '<td>' + currentTeam.city + '</td>';
+    success += '<td>' + currentTeam.points + '</td>';
+    success += '</tr>';
 }
+
+tableDisplay.innerHTML = success;
